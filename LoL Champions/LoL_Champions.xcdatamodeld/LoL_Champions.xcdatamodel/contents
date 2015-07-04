@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date">
+    <entity name="Champions">
+        <attribute name="img_skin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="img_square" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String">
             <userInfo/>
         </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <userInfo/>
     </entity>
     <elements>
-        <element name="Event" positionX="-452" positionY="-1599" width="128" height="60"/>
+        <element name="Champions" positionX="-452" positionY="-1599" width="128" height="105"/>
     </elements>
 </model>

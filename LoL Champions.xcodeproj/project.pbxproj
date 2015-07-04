@@ -15,6 +15,7 @@
 		9A8BECBB1B46288400DDA54E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BECBA1B46288400DDA54E /* Images.xcassets */; };
 		9A8BECBE1B46288400DDA54E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BECBC1B46288400DDA54E /* LaunchScreen.xib */; };
 		9A8BECCA1B46288400DDA54E /* LoL_ChampionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BECC91B46288400DDA54E /* LoL_ChampionsTests.swift */; };
+		9A8BECD71B4782FF00DDA54E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BECD61B4782FF00DDA54E /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9A8BECC31B46288400DDA54E /* LoL ChampionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoL ChampionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8BECC81B46288400DDA54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8BECC91B46288400DDA54E /* LoL_ChampionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoL_ChampionsTests.swift; sourceTree = "<group>"; };
+		9A8BECD61B4782FF00DDA54E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9A8BECD81B47830600DDA54E /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		9A8BECAB1B46288400DDA54E /* LoL Champions */ = {
 			isa = PBXGroup;
 			children = (
+				9A8BECD81B47830600DDA54E /* SwiftyJSON.h */,
+				9A8BECD61B4782FF00DDA54E /* SwiftyJSON.swift */,
 				9A8BECAE1B46288400DDA54E /* AppDelegate.swift */,
 				9A8BECB31B46288400DDA54E /* MasterViewController.swift */,
 				9A8BECB51B46288400DDA54E /* DetailViewController.swift */,
@@ -221,6 +226,7 @@
 				9A8BECB21B46288400DDA54E /* LoL_Champions.xcdatamodeld in Sources */,
 				9A8BECAF1B46288400DDA54E /* AppDelegate.swift in Sources */,
 				9A8BECB41B46288400DDA54E /* MasterViewController.swift in Sources */,
+				9A8BECD71B4782FF00DDA54E /* SwiftyJSON.swift in Sources */,
 				9A8BECB61B46288400DDA54E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +425,7 @@
 				9A8BECCF1B46288400DDA54E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A8BECD01B46288400DDA54E /* Build configuration list for PBXNativeTarget "LoL ChampionsTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +434,7 @@
 				9A8BECD21B46288400DDA54E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

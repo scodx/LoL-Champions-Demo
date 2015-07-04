@@ -10,8 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var championNameLabel: UILabel!
+    @IBOutlet var championTitleLabel: UILabel!
 
     var detailItem: AnyObject? {
         didSet {
@@ -19,20 +20,49 @@ class DetailViewController: UIViewController {
             self.configureView()
         }
     }
+    
+    
 
     func configureView() {
         // Update the user interface for the detail item.
+        
         if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.valueForKey("timeStamp")!.description
-            }
+            /*
+            championNameLabel.text = detail.name
+            championTitleLabel.text = detail.title
+            */
+            
+            println(detail)
+            
         }
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        
+        let url = NSURL(string: currentChampion["img_skin"]!)
+        
+        let urlRequest = NSURLRequest(URL: url!)
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
+            
+            if error != nil {
+                println(error)
+            } else {
+                if let imgSkin = UIImage(data: data) {
+                    self.image.image = imgSkin
+                }
+            }
+        }
+
+        
+        championNameLabel.text = currentChampion["name"]
+        championTitleLabel.text = currentChampion["title"]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,4 +72,30 @@ class DetailViewController: UIViewController {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
